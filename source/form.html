@@ -42,8 +42,7 @@
   <main class="main-container">
     <section class="hero">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img class="hero-catalog" src="/source/img/sedona-catalog.svg" width="230" height="40" alt="Логотип Седона">
-      <img class="hero-background" src="/source/img/hero-background.jpg" width="1200" height="518" alt="Фото каньона">
+      <img class="hero-img" src="/source/img/sedona-catalog.svg" width="230" height="40" alt="Логотип Седона">
     </section>
     <section class="review">
       <div class="review-desc">
@@ -54,24 +53,24 @@
       </div>
       <form class="review-form"  action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
-          <legend class="review-form__introduce">Представьтесь:</legend>
+          <legend class="review-form__title">Представьтесь:</legend>
           <ul class="review-form__introduce-list">
             <li class="review-form__introduce-item">
               <label class="review-form__name" for="name">Имя*:</label>
-              <input class="review-form__name--input" type="text" name="name" id="name" placeholder="Пётр">
+              <input class="review-form__input review-form__input--name" type="text" name="name" id="name" placeholder="Пётр">
             </li>
             <li class="review-form__introduce-item">
-              <label class="review-form__last-name" for="last-name">Фамилия*:</label>
-              <input class="review-form__last-name--input" type="text" name="last-name" id="last-name" placeholder="Пустота">
+              <label class="review-form__name" for="last-name">Фамилия*:</label>
+              <input class="review-form__input review-form__input--last-name" type="text" name="last-name" id="last-name" placeholder="Пустота">
             </li>
             <li class="review-form__introduce-item">
-              <label class="review-form__surname" for="surname">Отчество:</label>
-              <input class="review-form__surname--input" type="text" name="surname" id="surname" placeholder="Викторович">
+              <label class="review-form__name" for="surname">Отчество:</label>
+              <input class="review-form__input review-form__input--surname" type="text" name="surname" id="surname" placeholder="Викторович">
             </li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend class="review-form__contact">Контактная информация</legend>
+          <legend class="review-form__title">Контактная информация</legend>
           <ul class="review-form__contact-list">
             <li class="review-form__contact-item">
               <label class="review-form__phone" for="phone">Контактный телефон</label>
@@ -92,7 +91,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend class="review-form__grade grade">Ваше общее впечатление</legend>
+          <legend class="review-form__title grade">Ваше общее впечатление</legend>
             <ul class="grade-list">
               <li class="grade-item">
                 <input class="grade-item--input" type="radio" name="grade" id="positive" value="positive" checked>
@@ -109,7 +108,7 @@
             </ul>
         </fieldset>
         <fieldset>
-          <legend class="review-form__showplace showplace"></legend>
+          <legend class="review-form__title showplace">Посещенные достопримечательности:</legend>
             <ul class="showplace-list">
               <li class="showplace-item">
                 <input class="showplace-item--input" type="checkbox" name="bridge" id="bridge" checked>
@@ -130,7 +129,7 @@
             </ul>
         </fieldset>
         <fieldset>
-          <label for="message">Опишите свои эмоции</label>
+          <label class="review-form__title" for="message">Опишите свои эмоции</label>
           <textarea name="comment" placeholder="Опишите подробно все свои восторги" id="message"></textarea>
         </fieldset>
         <button class="form-button" type="button">
