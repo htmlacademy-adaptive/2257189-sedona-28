@@ -1,15 +1,35 @@
-.main-nav__toggle{
+.main-nav{
+  @media (min-width: @tablet-width) {
+   order: 0;
+  }
+}
+.main-nav__toggle {
   position: absolute;
   top: 17px;
   right: 20px;
   border: none;
-  background-color: #ffffff;
+  background-color: @font-color;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
 }
-.main-nav__toggle-close{
+.main-nav__toggle-close {
   position: absolute;
   top: 17px;
   right: 18px;
-  color: #ffffff;
+  color: @font-color;
   border:none;
-  background: #81B3D2;
+  background: @background-color;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+.main-nav__wrapper {
+  display: none;
+  @media (min-width: @tablet-width) {
+  display: flex;
+  justify-content: space-between;
+
+}
 }

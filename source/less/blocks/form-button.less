@@ -1,10 +1,17 @@
-.form-button{
-  font-family: "PT Sans", sans-serif;
+.form-button {
+  font-family: @font;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  color: #ffffff;
-  background-color: #81B3D2;
+  color: @font-color;
+  background-color: @background-color;
   padding: 16px 48px;
   border: none;
+}
+.form-button__container{
+  @media (min-width: @tablet-width) {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   }
 }

@@ -1,7 +1,12 @@
 .hero {
-  background-image: url("/img/mobile/hero-background-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("/img/zip.svg"), url("/img/mobile/hero-background-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, bottom;
   padding-top: 90px;
-  padding-bottom: 85px;
+  padding-bottom: 80px;
+  @media (min-width: @tablet-width) {
+  background-image: url("/img/zip.svg"), url("/img/tablet/hero-background-tablet.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, top;
+  }
  }

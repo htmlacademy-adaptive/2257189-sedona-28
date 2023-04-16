@@ -1,0 +1,33 @@
+.foto-container{
+  @media (min-width: @tablet-width) {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: @background-input;
+  }
+}
+.foto-container:nth-child(2){
+  @media (min-width: @tablet-width) {
+   background-color: @background-like;
+  }
+}
+.foto-container__caption {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 15px;
+}
+.foto-container__author {
+  font-weight: 400;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+.foto-container__like {
+  font-weight: 700;
+  font-size: 14px;
+}
+

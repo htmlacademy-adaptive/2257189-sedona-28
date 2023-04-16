@@ -1,83 +1,190 @@
-.review-form__title{
+.review-form{
+  padding: 24px 20px;
+  @media (min-width: @tablet-width) {
+   padding: 0 60px 64px 60px;
+   }
+}
+.review-form__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 20px;
   padding: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+   }
 }
 .review-form__introduce-list,
-.review-form__contact-list{
+.review-form__contact-list {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .review-form__introduce-item,
-.review-form__contact-list{
+.review-form__contact-list {
   list-style-type: none;
   margin: 0;
   text-align: left;
 }
-.review-form__introduce-item{
+.review-form__introduce-item {
   margin-bottom: 16px;
 }
 
-.review-form__description{
+.review-form__description {
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 16px;
 }
-.review-form__input{
+.review-form__input {
   width: 248px;
-  background: #F2F2F2;
+  background: @background-input;
   border: none;
   padding: 16px;
   line-height: 26px;
 }
-.review-form__introduce-item:last-child{
+.review-form__introduce-item:last-child {
   margin-bottom: 0;
 }
-.review-form__contacts{
+.review-form__contacts {
   width: 189px;
-  background: #F2F2F2;
+  background: @background-input;
   border: none;
   padding: 16px;
   line-height: 26px;
 }
-.review-form__contacts::placeholder{
-  font-family: "PT Sans", sans-serif;
+.review-form__contacts::-webkit-input-placeholder {
+  font-family: @font;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
   font-size: 18px;
 }
-.review-form__input::placeholder{
-  font-family: "PT Sans", sans-serif;
+.review-form__contacts::-moz-placeholder {
+  font-family: @font;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  font-size: 18px;
+}
+.review-form__contacts:-ms-input-placeholder {
+  font-family: @font;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  font-size: 18px;
+}
+.review-form__contacts::-ms-input-placeholder {
+  font-family: @font;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  font-size: 18px;
+}
+.review-form__contacts::placeholder {
+  font-family: @font;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  font-size: 18px;
+}
+.review-form__input::-webkit-input-placeholder {
+  font-family: @font;
   color: #000000;
   fill-opacity: 1;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
-.review-form__contact-item{
+.review-form__input::-moz-placeholder {
+  font-family: @font;
+  color: #000000;
+  fill-opacity: 1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.review-form__input:-ms-input-placeholder {
+  font-family: @font;
+  color: #000000;
+  fill-opacity: 1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.review-form__input::-ms-input-placeholder {
+  font-family: @font;
+  color: #000000;
+  fill-opacity: 1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.review-form__input::placeholder {
+  font-family: @font;
+  color: #000000;
+  fill-opacity: 1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.review-form__contact-item {
   margin-bottom: 16px;
 }
-.review-form__contact-item:last-child{
+.review-form__contact-item:last-child {
   margin-bottom: 0;
 }
-.review-form__text{
+.review-form__text {
   width: 248px;
   height: 150px;
-  background: #F2F2F2;
+  background: @background-input;
   padding: 16px;
   border: none;
   margin-bottom: 22px;
+  @media (min-width: @tablet-width) {
+    width: 616px;
+   }
 }
-.review-form__text::placeholder{
-  font-family: "PT Sans", sans-serif;
+.review-form__text::-webkit-input-placeholder {
+  font-family: @font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
+}
+.review-form__text::-moz-placeholder {
+  font-family: @font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.review-form__text:-ms-input-placeholder {
+  font-family: @font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.review-form__text::-ms-input-placeholder {
+  font-family: @font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.review-form__text::placeholder {
+  font-family: @font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.review-form__container{
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+   }
 }
