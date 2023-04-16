@@ -4,16 +4,29 @@
 .fotos__list {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 280px;
+  grid-template-rows: 1fr;
 }
 .fotos__item {
   list-style-type: none;
   text-align: left;
   padding-top: 25px;
   padding-bottom: 25px;
-  @media (min-width: @tablet-width) {
+}
+
+@media (min-width: @tablet-width) {
+  .fotos__item {
     padding: 0;
-   }
+
+    &:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .fotos__list {
+    padding: 0;
+    grid-template-columns: 324px 324px;
+  }
 }
