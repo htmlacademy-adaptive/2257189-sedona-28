@@ -5,9 +5,21 @@
   background-position: bottom, bottom;
   padding-top: 90px;
   padding-bottom: 80px;
-  @media (min-width: @tablet-width) {
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
     background-image: url("/img/zip.svg"),
       url("/img/tablet/hero-background-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, top;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    background-image: url("/img/zip.svg"),
+      url("/img/desktop/hero-background-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, top;
   }

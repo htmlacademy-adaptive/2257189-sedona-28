@@ -1,6 +1,7 @@
 .fotos {
   padding: 37px 20px 0 20px;
 }
+
 .fotos__list {
   padding: 0;
   margin: 0;
@@ -8,12 +9,12 @@
   justify-content: center;
   grid-template-columns: 280px;
   grid-template-rows: 1fr;
+  gap: 25px;
 }
+
 .fotos__item {
   list-style-type: none;
   text-align: left;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,5 +29,6 @@
   .fotos__list {
     padding: 0;
     grid-template-columns: 324px 324px;
+    gap: 0;
   }
 }

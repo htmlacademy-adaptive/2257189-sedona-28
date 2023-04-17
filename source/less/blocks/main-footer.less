@@ -4,20 +4,26 @@
   justify-content: space-between;
   padding-top: 33px;
   padding-bottom: 33px;
-  @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
 }
+
 .main-footer__social {
   margin-bottom: 30px;
-  @media (min-width: @tablet-width) {
-    margin: 0;
-  }
 }
+
 .main-footer__copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main-footer__social {
+    margin: 0;
+  }
 }

@@ -1,32 +1,24 @@
-.foto__road {
-  @media (min-width: @tablet-width) {
-    width: 648px;
-    height: 400px;
-  }
-}
-
-.proba {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 648px;
-  }
-}
-.foto {
-  @media (min-width: @tablet-width) {
-    width: 324px;
-  }
-}
-.foto__picture {
-  @media (min-width: @tablet-width) {
-    width: 324px;
-    height: 267px;
-  }
-}
 .foto__picture,
 .foto__road {
   display: block;
 }
+
 .foto__author {
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .foto__road {
+    width: 648px;
+    height: 400px;
+  }
+
+  .foto {
+    width: 324px;
+  }
+
+  .foto__picture {
+    width: 324px;
+    height: 267px;
+  }
 }

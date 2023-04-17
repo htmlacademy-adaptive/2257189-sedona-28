@@ -4,8 +4,15 @@
   background-position: center;
   display: block;
 }
-.map__images {
-  @media (min-width: @tablet-width) {
+
+@media (min-width: @tablet-width) {
+  .map__images {
     width: 765px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__images {
+    width: 1200px;
   }
 }

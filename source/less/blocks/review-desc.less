@@ -1,22 +1,28 @@
 .review-desc {
   padding: 36px 20px 18px 20px;
-  @media (min-width: @tablet-width) {
-    padding: 64px 166px 108px 166px;
-  }
 }
+
 .review-desc__title {
   margin: 0;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 24px;
-  @media (min-width: @tablet-width) {
-    font-size: 30px;
-    line-height: 26px;
-  }
 }
+
 .review-desc__description {
   font-size: 14px;
   text-transform: uppercase;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .review-desc__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .review-desc {
+    padding: 64px 166px 108px 166px;
+  }
 }

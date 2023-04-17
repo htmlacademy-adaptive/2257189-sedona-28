@@ -4,13 +4,12 @@
   flex-direction: column;
   align-items: center;
 }
+
 .searching-form__wraper {
   margin: 0;
   padding: 38px 29px 32px 29px;
-  @media (min-width: @tablet-width) {
-    padding: 60px 166px 44px 166px;
-  }
 }
+
 .searching-form__title {
   margin: 0;
   font-size: 21px;
@@ -18,15 +17,27 @@
   text-transform: uppercase;
   margin-bottom: 17px;
 }
+
 .searching-form__description {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
 }
-.searching-form__button {
-  @media (min-width: @tablet-width) {
+
+@media (min-width: @tablet-width) {
+  .searching-form__wraper {
+    padding: 60px 166px 44px 166px;
+  }
+
+  .searching-form__button {
     width: 458px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .searching-form__wraper {
+    width: 453px;
   }
 }

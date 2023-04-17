@@ -1,9 +1,5 @@
 .review-form {
   padding: 24px 20px;
-
-  @media (min-width: @tablet-width) {
-    padding: 0 60px 64px 60px;
-  }
 }
 
 .review-form__title {
@@ -12,10 +8,6 @@
   line-height: 26px;
   text-transform: uppercase;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
-    font-size: 21px;
-  }
 }
 
 .review-form__introduce-list,
@@ -159,10 +151,6 @@
   padding: 16px;
   border: none;
   margin-bottom: 22px;
-
-  @media (min-width: @tablet-width) {
-    width: 616px;
-  }
 }
 
 .review-form__text::-webkit-input-placeholder {
@@ -205,8 +193,20 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.review-form__container {
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .review-form {
+    padding: 0 60px 64px 60px;
+  }
+
+  .review-form__title {
+    font-size: 21px;
+  }
+
+  .review-form__text {
+    width: 616px;
+  }
+
+  .review-form__container {
     display: flex;
     justify-content: space-between;
   }
