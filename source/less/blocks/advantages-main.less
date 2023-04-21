@@ -1,6 +1,7 @@
-.advantages-main{
+.advantages-main {
   padding: 32px 18px 32px 18px;
 }
+
 .advantages-main__title {
   font-weight: 700;
   font-size: 18px;
@@ -9,10 +10,31 @@
   margin: 0;
   margin-bottom: 35px;
 }
+
 .advantages-main__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-main {
+    padding: 47px 113px 55px 113px;
+  }
+
+  .advantages-main__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-main {
+    padding: 59px 329px 44px 329px;
+  }
+
+  .advantages-main__title {
+    font-size: 21px;
+  }
 }

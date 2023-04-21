@@ -1,0 +1,55 @@
+.foto-container__caption {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.foto-container__author {
+  font-weight: 400;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+.foto-container__like {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .foto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: @background-input;
+  }
+
+  .fotos-container__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .foto-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 360px;
+  }
+
+  .foto-container:nth-child(1) {
+    width: 1160px;
+  }
+
+  .foto-container__description {
+    color: @font-color;
+  }
+
+  .foto-container__like {
+    color: @font-color;
+  }
+}

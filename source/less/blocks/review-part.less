@@ -1,8 +1,23 @@
-.review-part{
+.review-part {
   width: 280px;
   border: none;
-  padding: 0 ;
-  margin: 0;
-  margin-top: 24px;
-  margin-bottom: 34px;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .review-part__check {
+    margin: 0 auto;
+  }
+
+  .review-part {
+    width: 312px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review-part__check {
+    padding: 45px 0 75px 0;
+  }
 }

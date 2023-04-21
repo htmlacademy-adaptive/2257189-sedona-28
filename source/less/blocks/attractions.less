@@ -1,0 +1,18 @@
+@media (min-width: @tablet-width) {
+  .attractions {
+    display: grid;
+    grid-template-columns: 224px 224px;
+    row-gap: 32px;
+    column-gap: 16px;
+    justify-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions {
+    display: grid;
+    grid-template-columns: repeat(4, 184px);
+    gap: 64px;
+    justify-items: center;
+  }
+}

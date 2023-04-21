@@ -3,15 +3,67 @@
   text-align: left;
   padding: 25px 18px 25px 65px;
 }
-.advice-item__title{
+
+.advice-item__house {
+  background: url("/img/tablet/icon-house-tablet.svg") no-repeat;
+  background-size: 39px 37px;
+  background-position: 5% 10%;
+}
+
+.advice-item__food {
+  background: url("/img/tablet/icon-burger-tablet.svg") no-repeat;
+  background-size: 40px 35px;
+  background-position: 5% 13%;
+}
+
+.advice-item__gift {
+  background: url("/img/tablet/icon-gift-tablet.svg") no-repeat;
+  background-size: 32px 38px;
+  background-position: 5% 13%;
+}
+
+.advice-item__title {
   margin: 0;
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
-.advice-item__description{
+
+.advice-item__description {
   margin: 0;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .advice-item {
+    width: 190px;
+    padding: 158px 33px 60px 33px;
+    text-align: center;
+  }
+
+  .advice-item__house {
+    background-position: 50% 25%;
+    background-size: 75px 72px;
+  }
+
+  .advice-item__food {
+    background-position: 50% 25%;
+    background-size: 80px 68px;
+  }
+
+  .advice-item__gift {
+    background-size: 66px 75px;
+    background-position: 50% 25%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advice-item {
+    width: 334px;
+    height: 112px;
+    padding: 158px 33px 60px 33px;
+    text-align: center;
+  }
 }

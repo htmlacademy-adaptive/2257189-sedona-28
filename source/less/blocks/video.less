@@ -1,18 +1,35 @@
-.video{
+.video {
   padding: 17px 20px 0 20px;
 }
-.video__title{
+
+.video__title {
   margin: 0;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 35px;
 }
-.video__description{
+
+.video__description {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 35px;
+}
 
+@media (min-width: @tablet-width) {
+  .video__images {
+    width: 648px;
+    height: 500px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__images {
+    width: 800px;
+  }
 }
