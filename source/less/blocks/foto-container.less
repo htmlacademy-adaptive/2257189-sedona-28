@@ -28,7 +28,28 @@
     background-color: @background-input;
   }
 
-  .foto-container:nth-child(2) {
-    background-color: @background-like;
+  .fotos-container__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .foto-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 360px;
+  }
+
+  .foto-container:nth-child(1) {
+    width: 1160px;
+  }
+
+  .foto-container__description {
+    color: @font-color;
+  }
+
+  .foto-container__like {
+    color: @font-color;
   }
 }

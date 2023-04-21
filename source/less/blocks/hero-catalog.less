@@ -4,5 +4,30 @@
       url("/img/tablet/hero-background-tablet.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, top;
+    height: 290px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero-catalog {
+    background-image: url("/img/zip.svg"),
+      url("/img/desktop/hero-background-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, top;
+    height: 301px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hero-catalog__image {
+    width: 458px;
+    height: 78px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero-catalog__image {
+    width: 460px;
+    height: 80px;
   }
 }
