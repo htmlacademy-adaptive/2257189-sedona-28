@@ -1,16 +1,15 @@
 @media (min-width: @tablet-width) {
   .impression {
     display: grid;
-    grid-template-columns: 280px 280px;
-    gap: 16px;
-    justify-items: center;
+    grid-template-columns: repeat(2, 280px);
+    gap: 32px;
+    justify-items: start;
   }
 }
 
 @media (min-width: @desktop-width) {
   .impression {
-    display: grid;
-    grid-template-columns: 280px 280px 280px;
+    grid-template-columns: repeat(3, 280px);
     gap: 28px;
     justify-items: center;
   }

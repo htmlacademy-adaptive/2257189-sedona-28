@@ -29,3 +29,15 @@
     padding: 46px 330px 67px 330px;
   }
 }
+
+@media (max-width: @mobile-width-only) {
+  .fotos-container::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 320px;
+    margin-bottom: 24px;
+    margin-left: -20px;
+  }
+}

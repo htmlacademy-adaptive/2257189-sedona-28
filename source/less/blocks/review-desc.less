@@ -1,5 +1,12 @@
 .review-desc {
-  padding: 36px 20px 18px 20px;
+  padding: 36px 20px 0 20px;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    color: @line;
+  }
 }
 
 .review-desc__title {
@@ -30,5 +37,17 @@
 @media (min-width: @desktop-width) {
   .review-desc {
     padding: 64px 350px 64px 350px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .review-desc::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 320px;
+    margin-top: 24px;
+    margin-left: -20px;
   }
 }

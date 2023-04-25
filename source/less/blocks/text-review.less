@@ -2,5 +2,28 @@
   .text-review {
     width: 648px;
     margin: 0 auto;
+    position: relative;
+  }
+
+  .text-review::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 123px;
+    top: -12px;
+    left: 0;
+  }
+
+  .text-review::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 123px;
+    top: -12px;
+    right: 0;
   }
 }

@@ -35,7 +35,7 @@
             />
           </svg>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper main-nav--closed main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item ">
               <a class="site-list__link" href="index.html">
@@ -83,10 +83,10 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="hero">
+      <section class="hero hero-catalog">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img
-          class="hero-img"
+          class="hero-catalog__image"
           src="/img/sedona-catalog.svg"
           width="230"
           height="40"
@@ -216,58 +216,67 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="review-part review-part__check">
+          <fieldset
+            class="review-part review-part__check review-part__check--radio"
+          >
             <legend class="review-form__title input">
               Ваше общее впечатление:
             </legend>
             <ul class="input-list impression">
-              <li class="input-item">
-                <input
-                  class="input-item__radio"
-                  type="radio"
-                  name="grade"
-                  id="positive"
-                  value="positive"
-                  checked
-                />
+              <li class="input-item ">
                 <label class="input-item__text" for="positive"
-                  >Скорее положительное</label
-                >
+                  >Скорее положительное
+                  <input
+                    class="input-item__radio visually-hidden"
+                    type="radio"
+                    name="grade"
+                    id="positive"
+                    value="positive"
+                    checked
+                  />
+                  <span class="control-mark__radio"></span>
+                </label>
               </li>
-              <li class="input-item">
-                <input
-                  class="input-item__radio"
-                  type="radio"
-                  name="negative"
-                  id="negative"
-                  value="negative"
-                />
-                <label class="input-item__text" for="negative"
-                  >Скорее отрицательное</label
-                >
+              <li class="input-item ">
+                <label class="input-item__text" for="positive"
+                  >Скорее отрицательное
+                  <input
+                    class="input-item__radio visually-hidden"
+                    type="radio"
+                    name="grade"
+                    id="positive"
+                    value="positive"
+                    checked
+                  />
+                  <span class="control-mark__radio"></span>
+                </label>
               </li>
-              <li class="input-item">
-                <input
-                  class="input-item__radio"
-                  type="radio"
-                  name="difficult"
-                  id="difficult"
-                  value="difficult"
-                />
-                <label class="input-item__text" for="difficult"
-                  >Затрудняюсь ответить</label
-                >
+              <li class="input-item ">
+                <label class="input-item__text" for="positive"
+                  >Затрудняюсь ответить
+                  <input
+                    class="input-item__radio visually-hidden"
+                    type="radio"
+                    name="grade"
+                    id="positive"
+                    value="positive"
+                    checked
+                  />
+                  <span class="control-mark__radio"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-part review-part__check">
+          <fieldset
+            class="review-part  review-part__check review-part__check--checkbox"
+          >
             <legend class="review-form__title input">
               Посещенные достопримечательности:
             </legend>
             <ul class="input-list attractions">
               <li class="input-item">
                 <input
-                  class="input-item__checkbox"
+                  class="input-item__checkbox visually-hidden"
                   type="checkbox"
                   name="bridge"
                   id="bridge"
@@ -276,10 +285,11 @@
                 <label class="input-item__text" for="bridge"
                   >Мост Дьявола</label
                 >
+                <span class="control-mark__checkbox"></span>
               </li>
               <li class="input-item">
                 <input
-                  class="input-item__checkbox"
+                  class="input-item__checkbox visually-hidden"
                   type="checkbox"
                   name="mountain"
                   id="mountain"
@@ -288,25 +298,28 @@
                 <label class="input-item__text" for="mountain"
                   >Гора-Колокол</label
                 >
+                <span class="control-mark__checkbox"></span>
               </li>
               <li class="input-item">
                 <input
-                  class="input-item__checkbox"
+                  class="input-item__checkbox visually-hidden"
                   type="checkbox"
                   name="park"
                   id="park"
                   checked
                 />
                 <label class="input-item__text" for="park">Слайд-парк</label>
+                <span class="control-mark__checkbox"></span>
               </li>
               <li class="input-item">
                 <input
-                  class="input-item__checkbox"
+                  class="input-item__checkbox visually-hidden"
                   type="checkbox"
                   name="rock"
                   id="rock"
                 />
                 <label class="input-item__text" for="rock">Красные скалы</label>
+                <span class="control-mark__checkbox"></span>
               </li>
             </ul>
           </fieldset>
@@ -468,5 +481,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
