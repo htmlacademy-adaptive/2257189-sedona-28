@@ -1,18 +1,9 @@
-let navMain = document.querySelector('.main-nav__wrapper');
+let header = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
-let navToggleClose = document.querySelector('.main-nav__toggle-close')
+let navList = document.querySelector('.main-nav__wrapper')
 
-navMain.classList.remove('main-nav--nojs');
+header.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    } else {
-    navMain.classList.add('main-nav--closed');
-  }
+  navList.classList.toggle('main-nav--closed')
 });
-
-navToggleClose.addEventListener('click', function () {
-   navMain.classList.add('main-nav--closed');
-  }
-);

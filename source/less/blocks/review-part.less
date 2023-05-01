@@ -8,12 +8,22 @@
 
 @media (min-width: @tablet-width) {
   .review-part__check {
-    margin: 0 auto;
     position: relative;
+  }
+
+  .review-part__check--radio {
+    padding-right: 96px;
+    padding-left: 96px;
+  }
+
+  .review-part__check--checkbox {
+    padding-right: 144px;
+    padding-left: 144px;
   }
 
   .review-part {
     width: 312px;
+    margin: 0 auto;
   }
 
   .review-part__introduce::after {
@@ -35,7 +45,7 @@
     background-color: #d6d6d6;
     width: 123px;
     top: -12px;
-    left: -15px;
+    left: 60px;
   }
 
   .review-part__check::after {
@@ -46,17 +56,15 @@
     background-color: #d6d6d6;
     width: 123px;
     top: -12px;
-    right: -15px;
+    right: 60px;
   }
 
   .review-part__check--checkbox::before {
     top: -30px;
-    left: -70px;
   }
 
   .review-part__check--checkbox::after {
     top: -30px;
-    right: -70px;
   }
 }
 
@@ -66,7 +74,11 @@
   }
 
   .review-part__introduce::after {
-    margin-right: -46px;
+    margin-right: -33px;
+  }
+
+  .review-part__introduce {
+    margin-right: 46px;
   }
 
   .review-part__check::before {

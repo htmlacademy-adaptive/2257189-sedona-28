@@ -1,19 +1,18 @@
-.control-mark__radio {
+.control-mark {
   position: absolute;
   left: 0;
-  top: -11px;
   width: 46px;
   height: 46px;
   background: @background-input;
-  border-radius: 50%;
-}
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.control-mark__checkbox {
-  position: absolute;
-  left: 0;
-  top: -10px;
-  width: 46px;
-  height: 46px;
-  background: @background-input;
-  border-radius: 4px;
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
 }

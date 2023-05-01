@@ -196,7 +196,8 @@
 
 @media (min-width: @tablet-width) {
   .review-form {
-    padding: 0 60px 64px 60px;
+    padding: 0;
+    padding-bottom: 64px;
   }
 
   .review-form__title {
@@ -210,6 +211,8 @@
   .review-form__container {
     display: flex;
     justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .review-form__contacts {
@@ -219,7 +222,12 @@
 
 @media (min-width: @desktop-width) {
   .review-form {
-    padding: 0 120px 64px 120px;
+    padding-bottom: 64px;
+  }
+
+  .review-form__container {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
   .review-form__input {
