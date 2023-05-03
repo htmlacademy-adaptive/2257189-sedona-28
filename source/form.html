@@ -5,37 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale-1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" sizes="32x32" href="/favicon.ico" />
   </head>
 
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img
-          src="/img/sedona-logo.svg"
-          width="185"
-          height="96"
-          alt="Логотип Седоны"
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-            width="23"
-            height="22"
-            fill="none"
-            viewBox="0 0 23 22"
-          >
-            <path
-              fill="#81B3D2"
-              d="M22.9 0H0v4h22.9V0Zm0 9H0v4h22.9V9Zm0 9H0v4h22.9v-4Z"
-            />
-          </svg>
-        </button>
-        <div class="main-nav__wrapper">
+      <nav class="main-header__nav main-nav main-nav--nojs">
+        <div class="main-nav__wrapper main-nav--closed">
           <ul class="main-nav__list site-list">
             <li class="site-list__item ">
               <a class="site-list__link" href="index.html">
@@ -61,8 +37,25 @@
               </a>
             </li>
           </ul>
-          <button class="main-nav__toggle-close" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
+
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg
+              class="main-nav__menu"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+              width="23"
+              height="22"
+              fill="none"
+              viewBox="0 0 23 22"
+            >
+              <path
+                fill="#81B3D2"
+                d="M22.9 0H0v4h22.9V0Zm0 9H0v4h22.9V9Zm0 9H0v4h22.9v-4Z"
+              />
+            </svg>
+
             <svg
               class="main-nav__close-button"
               xmlns="http://www.w3.org/2000/svg"
@@ -81,12 +74,22 @@
           </button>
         </div>
       </nav>
+      <div class="main-header__logo">
+        <a class="main-header__link" href="index.html">
+          <img
+            src="/img/sedona-logo.svg"
+            width="185"
+            height="96"
+            alt="Логотип Седоны"
+          />
+        </a>
+      </div>
     </header>
     <main class="main-container">
-      <section class="hero">
+      <section class="hero hero-catalog">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img
-          class="hero-img"
+          class="hero-catalog__image"
           src="/img/sedona-catalog.svg"
           width="230"
           height="40"
@@ -216,96 +219,106 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="review-part review-part__check">
+          <fieldset
+            class="review-part review-part__check review-part__check--radio"
+          >
             <legend class="review-form__title input">
               Ваше общее впечатление:
             </legend>
             <ul class="input-list impression">
-              <li class="input-item">
+              <li class="input-item ">
+                <label class="input-item__text"
+                  >Скорее положительное
+                  <input
+                    class="input-item__control visually-hidden"
+                    type="radio"
+                    name="grade"
+                    value="positive"
+                    checked
+                  />
+                  <span class="control-mark control-mark--radio"></span>
+                </label>
+              </li>
+              <li class="input-item ">
                 <input
-                  class="input-item__radio"
+                  class="input-item__control visually-hidden"
                   type="radio"
                   name="grade"
-                  id="positive"
-                  value="positive"
-                  checked
-                />
-                <label class="input-item__text" for="positive"
-                  >Скорее положительное</label
-                >
-              </li>
-              <li class="input-item">
-                <input
-                  class="input-item__radio"
-                  type="radio"
-                  name="negative"
                   id="negative"
                   value="negative"
                 />
+                <span class="control-mark control-mark--radio"></span>
                 <label class="input-item__text" for="negative"
-                  >Скорее отрицательное</label
-                >
+                  >Скорее отрицательное
+                </label>
               </li>
-              <li class="input-item">
+              <li class="input-item ">
                 <input
-                  class="input-item__radio"
+                  class="input-item__control visually-hidden"
                   type="radio"
-                  name="difficult"
+                  name="grade"
                   id="difficult"
                   value="difficult"
                 />
+                <span class="control-mark control-mark--radio"></span>
                 <label class="input-item__text" for="difficult"
-                  >Затрудняюсь ответить</label
-                >
+                  >Затрудняюсь ответить
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-part review-part__check">
+          <fieldset
+            class="review-part  review-part__check review-part__check--checkbox"
+          >
             <legend class="review-form__title input">
               Посещенные достопримечательности:
             </legend>
             <ul class="input-list attractions">
               <li class="input-item">
                 <input
-                  class="input-item__checkbox"
+                  class="input-item__control visually-hidden"
                   type="checkbox"
                   name="bridge"
                   id="bridge"
                   checked
                 />
+                <span class="control-mark control-mark--checkbox"></span>
                 <label class="input-item__text" for="bridge"
                   >Мост Дьявола</label
                 >
               </li>
               <li class="input-item">
                 <input
-                  class="input-item__checkbox"
+                  class="input-item__control visually-hidden"
                   type="checkbox"
                   name="mountain"
                   id="mountain"
                   checked
                 />
+                <span class="control-mark control-mark--checkbox"></span>
                 <label class="input-item__text" for="mountain"
                   >Гора-Колокол</label
                 >
               </li>
               <li class="input-item">
                 <input
-                  class="input-item__checkbox"
+                  class="input-item__control visually-hidden"
                   type="checkbox"
                   name="park"
                   id="park"
                   checked
                 />
+                <span class="control-mark control-mark--checkbox"></span>
                 <label class="input-item__text" for="park">Слайд-парк</label>
               </li>
               <li class="input-item">
                 <input
-                  class="input-item__checkbox"
+                  class="input-item__control visually-hidden"
                   type="checkbox"
                   name="rock"
                   id="rock"
                 />
+                <span class="control-mark control-mark--checkbox"></span>
                 <label class="input-item__text" for="rock">Красные скалы</label>
               </li>
             </ul>
@@ -468,5 +481,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -5,49 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale-1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" sizes="32x32" href="/favicon.ico" />
+    <link rel="icon" href="/favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-180x180.png" />
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img
-          src="/img/sedona-logo.svg"
-          width="185"
-          height="96"
-          alt="Логотип Седоны"
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-            width="23"
-            height="22"
-            fill="none"
-            viewBox="0 0 23 22"
-          >
-            <path
-              fill="#81B3D2"
-              d="M22.9 0H0v4h22.9V0Zm0 9H0v4h22.9V9Zm0 9H0v4h22.9v-4Z"
-            />
-          </svg>
-        </button>
-        <div class="main-nav__wrapper">
+      <nav class="main-header__nav main-nav main-nav--nojs">
+        <div class="main-nav__wrapper main-nav--closed">
           <ul class="main-nav__list site-list">
             <li class="site-list__item ">
-              <a class="site-list__link site-list__link--active">
+              <a
+                class="site-list__link site-list__link--active"
+                href="index.html"
+              >
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+            <li class="site-list__item ">
+              <a class="site-list__link " href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+            <li class="site-list__item ">
+              <a class="site-list__link " href="form.html">
                 Форма отзыва
               </a>
             </li>
@@ -57,8 +38,25 @@
               </a>
             </li>
           </ul>
-          <button class="main-nav__toggle-close" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
+
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg
+              class="main-nav__menu"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+              width="23"
+              height="22"
+              fill="none"
+              viewBox="0 0 23 22"
+            >
+              <path
+                fill="#81B3D2"
+                d="M22.9 0H0v4h22.9V0Zm0 9H0v4h22.9V9Zm0 9H0v4h22.9v-4Z"
+              />
+            </svg>
+
             <svg
               class="main-nav__close-button"
               xmlns="http://www.w3.org/2000/svg"
@@ -77,6 +75,16 @@
           </button>
         </div>
       </nav>
+      <div class="main-header__logo">
+        <a class="main-header__link" href="index.html">
+          <img
+            src="/img/sedona-logo.svg"
+            width="185"
+            height="96"
+            alt="Логотип Седоны"
+          />
+        </a>
+      </div>
     </header>
     <main class="main-container">
       <section class="hero">
@@ -99,7 +107,9 @@
           </p>
         </div>
         <ul class="advantages-list">
-          <li class="advantages-item advantages-item--blue">
+          <li
+            class="advantages-item advantages-item--blue advantages-item--first"
+          >
             <h3 class="advantages-item__title">Настоящий городок</h3>
             <p class="advantages-item__number">— №1 —</p>
             <p class="advantages-item__description">
@@ -107,13 +117,30 @@
             </p>
           </li>
           <li class="advantages-item advantages-item__image">
-            <img
-              class="image"
-              src="/img/mobile/advantages-photo-1-mobile.jpg"
-              width="320"
-              height="260"
-              alt="картинка города Седона"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /img/desktop/advantages-photo-1-desktop.jpg  1x,
+                  /img/desktop/advantages-retina-1-desktop.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  /img/tablet/advantages-photo-1-tablet.jpg  1x,
+                  /img/tablet/advantages-retina-1-tablet.jpg 2x
+                "
+              />
+              <img
+                class="image"
+                src="/img/mobile/advantages-photo-1-mobile.jpg"
+                width="320"
+                height="260"
+                srcset="/img/mobile/advantages-1-mobile-retina.jpg 2x"
+                alt="картинка города Седона"
+              />
+            </picture>
           </li>
         </ul>
       </section>
@@ -154,13 +181,30 @@
             </p>
           </li>
           <li class="advantages-item advantages-item__image">
-            <img
-              class="image"
-              src="/img/mobile/advantages-photo-2-mobile.jpg"
-              width="320"
-              height="260"
-              alt="картинка каньона"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /img/desktop/advantages-photo-2-desktop.jpg  1x,
+                  /img/desktop/advantages-retina-2-desktop.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  /img/tablet/advantages-photo-2-tablet.jpg  1x,
+                  /img/tablet/advantages-retina-2-tablet.jpg 2x
+                "
+              />
+              <img
+                class="image"
+                src="/img/mobile/advantages-photo-2-mobile.jpg"
+                width="320"
+                height="260"
+                srcset="/img/mobile/advantages-2-mobile-retina.jpg 2x"
+                alt="картинка каньона"
+              />
+            </picture>
           </li>
           <li class="advantages-item advantages-item--grey">
             <h3 class="advantages-item__title">Небольшая площадь</h3>
@@ -198,13 +242,30 @@
         </a>
       </section>
       <div class="map">
-        <img
-          class="map__images"
-          src="/img/mobile/map-mobile.jpg"
-          width="320"
-          height="350"
-          alt="карта расположения Седоны"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /img/desktop/map-desktop.jpg        1x,
+              /img/desktop/map-desktop-retina.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/tablet/map-tablet.jpg        1x,
+              /img/tablet/map-tablet-retina.jpg 2x
+            "
+          />
+          <img
+            class="map__images"
+            src="/img/mobile/map-mobile.jpg"
+            width="320"
+            height="350"
+            srcset="/img/mobile/map-mobile-retina.jpg 2x"
+            alt="карта расположения Седоны"
+          />
+        </picture>
       </div>
     </main>
     <footer class="main-footer">
@@ -321,5 +382,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

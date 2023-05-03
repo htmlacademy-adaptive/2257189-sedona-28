@@ -1,0 +1,17 @@
+.image {
+  display: block;
+  background-color: @background-like;
+}
+
+@media (min-width: @tablet-width) {
+  .image {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .image {
+    width: 800px;
+  }
+}

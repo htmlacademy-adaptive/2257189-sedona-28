@@ -8,16 +8,118 @@
 
 @media (min-width: @tablet-width) {
   .review-part__check {
-    margin: 0 auto;
+    position: relative;
+  }
+
+  .review-part__check--radio {
+    padding-right: 96px;
+    padding-left: 96px;
+  }
+
+  .review-part__check--checkbox {
+    padding-right: 144px;
+    padding-left: 144px;
   }
 
   .review-part {
     width: 312px;
+    margin: 0 auto;
+  }
+
+  .review-part__introduce::after {
+    display: block;
+    content: "";
+    width: 1px;
+    background-color: #d6d6d6;
+    height: 338px;
+    float: right;
+    margin-top: -325px;
+    margin-right: 5px;
+  }
+
+  .review-part__check::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 123px;
+    top: -12px;
+    left: 60px;
+  }
+
+  .review-part__check::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 123px;
+    top: -12px;
+    right: 60px;
+  }
+
+  .review-part__check--checkbox::before {
+    top: -30px;
+  }
+
+  .review-part__check--checkbox::after {
+    top: -30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .review-part__check {
     padding: 45px 0 75px 0;
+  }
+
+  .review-part__introduce::after {
+    margin-right: -33px;
+  }
+
+  .review-part__introduce {
+    margin-right: 46px;
+  }
+
+  .review-part__check::before {
+    width: 280px;
+    left: -30px;
+  }
+
+  .review-part__check::after {
+    width: 280px;
+    right: -30px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .review-part__introduce::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 320px;
+    margin-top: 24px;
+    margin-left: -20px;
+  }
+
+  .review-part__contacts::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 320px;
+    margin-top: 24px;
+    margin-left: -20px;
+  }
+
+  .review-part__check::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 320px;
+    margin-top: 24px;
+    margin-left: -20px;
   }
 }
