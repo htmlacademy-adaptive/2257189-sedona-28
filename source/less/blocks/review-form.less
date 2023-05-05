@@ -11,26 +11,6 @@
   max-width: 325px;
 }
 
-.review-form__introduce-list,
-.review-form__contact-list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.review-form__introduce-item,
-.review-form__contact-list {
-  list-style-type: none;
-  margin: 0;
-  text-align: left;
-}
-
-.review-form__introduce-item {
-  margin-bottom: 16px;
-}
-
 .review-form__description {
   font-size: 14px;
   text-transform: uppercase;
@@ -43,53 +23,6 @@
   border: none;
   padding: 16px;
   line-height: 26px;
-}
-
-.review-form__introduce-item:last-child {
-  margin-bottom: 0;
-}
-
-.review-form__contacts {
-  width: 189px;
-  background: @background-input;
-  border: none;
-  padding: 16px;
-  line-height: 26px;
-}
-
-.review-form__contacts::-webkit-input-placeholder {
-  font-family: @font;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.review-form__contacts::-moz-placeholder {
-  font-family: @font;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.review-form__contacts:-ms-input-placeholder {
-  font-family: @font;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.review-form__contacts::-ms-input-placeholder {
-  font-family: @font;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.review-form__contacts::placeholder {
-  font-family: @font;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: 700;
-  font-size: 18px;
 }
 
 .review-form__input::-webkit-input-placeholder {
@@ -135,14 +68,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-}
-
-.review-form__contact-item {
-  margin-bottom: 16px;
-}
-
-.review-form__contact-item:last-child {
-  margin-bottom: 0;
 }
 
 .review-form__text {
@@ -214,10 +139,6 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-
-  .review-form__contacts {
-    width: 205px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -232,10 +153,6 @@
 
   .review-form__input {
     width: 398px;
-  }
-
-  .review-form__contacts {
-    width: 340px;
   }
 
   .review-form__text {

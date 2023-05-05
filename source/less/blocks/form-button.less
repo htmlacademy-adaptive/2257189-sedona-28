@@ -1,4 +1,4 @@
-.form-button {
+.form-button__submit {
   font-family: @font;
   font-size: 21px;
   font-weight: 700;
@@ -9,18 +9,31 @@
   border: none;
 }
 
+.form-button__desc {
+  margin: 0;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}
+
 @media (min-width: @tablet-width) {
-  .form-button__container {
+  .form-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  .form-button__desc {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .form-button__container {
+  .form-button {
     margin-left: 216px;
     margin-right: 216px;
     padding: 0;
