@@ -1,9 +1,12 @@
-.map__images {
-  background: url("/img/mobile/map-point.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: @background-like;
-  display: block;
+.map {
+  position: relative;
+}
+
+.map__marker {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  background: url(/img/mobile/map-point.svg);
 }
 
 @media (min-width: @tablet-width) {
