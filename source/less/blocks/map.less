@@ -4,19 +4,29 @@
 
 .map__marker {
   position: absolute;
-  top: 50%;
-  right: 50%;
+  top: 45%;
+  right: 45%;
   background: url(/img/mobile/map-point.svg);
+  width: 27px;
+  height: 27px;
 }
 
 @media (min-width: @tablet-width) {
   .map__images {
     width: 765px;
   }
+
+  .map__marker {
+    right: 48%;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .map__images {
     width: 1200px;
+  }
+
+  .map__marker {
+    right: 49%;
   }
 }

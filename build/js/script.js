@@ -1,0 +1,1 @@
+let header=document.querySelector(".main-nav"),navToggle=document.querySelector(".main-nav__toggle"),navList=document.querySelector(".main-nav__wrapper");header.classList.remove("main-nav--nojs"),navToggle.addEventListener("click",(function(){navList.classList.toggle("main-nav--closed")}));
