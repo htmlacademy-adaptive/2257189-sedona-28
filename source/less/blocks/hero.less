@@ -1,9 +1,10 @@
 .hero {
+  position: relative;
   background-color: @background-like;
   background-image: url("/img/mobile/hero-background-mobile.jpg");
   @media (min-resolution: 2dppx) {
     background-image: url("/img/mobile/hero-background-retina-mobile.jpg");
-    background-size: contain;
+    background-size: cover;
   }
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, bottom;
@@ -12,6 +13,7 @@
 
   &::after {
     content: "";
+    position: absolute;
     background-image: url("/img/zip.svg");
     background-position: center bottom;
     background-size: cover;
@@ -28,7 +30,7 @@
     background-position: bottom, 50%;
     @media (min-resolution: 2dppx) {
       background-image: url("/img/tablet/hero-background-retina-tablet.jpg");
-      background-size: contain;
+      background-size: cover;
     }
   }
 
