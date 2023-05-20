@@ -9,11 +9,9 @@
 
   &:hover {
     .main-nav__menu {
-      fill: red;
+      fill: @hover-color;
     }
-  }
 
-  &:hover {
     .main-nav__close-button {
       opacity: 0.6;
     }
@@ -23,10 +21,18 @@
     .main-nav__close-button {
       opacity: 0.6;
     }
+
+    .main-nav__menu {
+      opacity: 0.6;
+    }
   }
 
   &:active {
     .main-nav__close-button {
+      opacity: 0.3;
+    }
+
+    .main-nav__menu {
       opacity: 0.3;
     }
   }
@@ -34,14 +40,15 @@
 
 .main-nav__menu {
   display: none;
+  fill: @background-color;
 }
 
 .main-nav__close-button {
   display: block;
-  fill: white;
+  fill: #ffffff;
 }
 
-.main-nav--closed {
+.main-nav__wrapper--closed {
   & .main-nav__menu {
     display: block;
   }
@@ -68,7 +75,7 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed {
+  .main-nav__wrapper--closed {
     & .main-nav__list {
       display: none;
     }

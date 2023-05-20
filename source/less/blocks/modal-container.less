@@ -8,6 +8,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  z-index: 2;
 }
 
 .modal-container__fail {
@@ -20,7 +21,7 @@
 }
 
 .modal-container__success-wraper {
-  padding: 45px 39px 0px 37px;
+  padding: 45px 39px 0 37px;
 }
 
 .modal-container__title {
@@ -44,7 +45,7 @@
 @media (min-width: @tablet-width) {
   .modal-container {
     top: 282px;
-    left: 184px;
+    left: 32%;
     width: 400px;
   }
 
@@ -73,7 +74,7 @@
     position: fixed;
     width: 640px;
     top: 150px;
-    left: 65px;
+    left: 21%;
     background: #ffffff;
   }
 
@@ -92,10 +93,10 @@
 
 @media (min-width: @desktop-width) {
   .modal-container {
-    left: 439px;
+    left: 39%;
   }
 
   .modal-container__success {
-    left: 320px;
+    left: 28%;
   }
 }
