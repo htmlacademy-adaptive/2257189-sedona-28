@@ -2,72 +2,103 @@
   position: relative;
 }
 
-.check::before {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 1px;
-  background-color: #d6d6d6;
-  width: 123px;
-  top: -12px;
-  left: 60px;
-}
-
-.check::after {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 1px;
-  background-color: #d6d6d6;
-  width: 123px;
-  top: -12px;
-  right: 60px;
-}
-
-.check--checkbox::before {
-  top: -30px;
-}
-
-.check--checkbox::after {
-  top: -30px;
-}
-
 @media (min-width: @tablet-width) {
   .check--radio {
-    padding-right: 96px;
-    padding-left: 96px;
+    padding: 0 96px 51px 96px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: #d6d6d6;
+      width: 123px;
+      left: 58px;
+      top: -43px;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: #d6d6d6;
+      width: 123px;
+      top: -43px;
+      right: 58px;
+    }
   }
 
   .check--checkbox {
-    padding-right: 144px;
-    padding-left: 144px;
+    padding: 0 144px 43px 144px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: #d6d6d6;
+      width: 123px;
+      left: 58px;
+      top: -55px;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: #d6d6d6;
+      width: 123px;
+      top: -55px;
+      right: 58px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .check {
-    padding: 45px 0 75px 0;
+    padding: 21px 0 75px 5px;
   }
 
   .check::before {
     width: 280px;
-    left: -30px;
+    left: 120px;
+    top: -38px;
   }
 
   .check::after {
     width: 280px;
-    right: -30px;
+    right: 120px;
+    top: -38px;
+  }
+
+  .check--checkbox {
+    &::before {
+      left: 120px;
+      top: -52px;
+    }
+
+    &::after {
+      top: -52px;
+      right: 120px;
+    }
   }
 }
 
 @media (max-width: @mobile-width-only) {
-  .check::after {
-    display: block;
-    content: "";
-    height: 1px;
-    background-color: #d6d6d6;
-    width: 320px;
-    margin-top: 24px;
-    margin-left: -20px;
+  .check {
+    margin-bottom: 51px;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 1px;
+      background-color: #d6d6d6;
+      width: 320px;
+      margin-left: -20px;
+      position: absolute;
+      margin-top: 24px;
+    }
   }
 }

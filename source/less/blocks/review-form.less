@@ -1,14 +1,13 @@
 .review-form {
-  padding: 24px 20px;
+  padding: 24px 20px 29px 20px;
 }
 
 .review-form__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 25px;
   text-transform: uppercase;
-  padding: 0;
-  max-width: 325px;
+  padding-bottom: 18px;
 }
 
 .review-form__description {
@@ -18,11 +17,16 @@
 }
 
 .review-form__input {
-  width: 248px;
+  width: 280px;
+  box-sizing: border-box;
   background: @background-input;
   border: none;
-  padding: 16px;
+  padding: 20px 15px 18px 16px;
   line-height: 26px;
+
+  &:hover {
+    background-color: @line;
+  }
 }
 
 .review-form__input::-webkit-input-placeholder {
@@ -71,12 +75,13 @@
 }
 
 .review-form__text {
-  width: 248px;
-  height: 150px;
-  background: @background-input;
-  padding: 16px;
-  border: none;
-  margin-bottom: 22px;
+  box-sizing: border-box;
+  width: 274px;
+  height: 153px;
+  background: #f2f2f2;
+  padding: 17px 39px 0 10px;
+  border: 0;
+  margin-bottom: 49px;
 }
 
 .review-form__text::-webkit-input-placeholder {
@@ -122,40 +127,62 @@
 @media (min-width: @tablet-width) {
   .review-form {
     padding: 0;
-    padding-bottom: 64px;
+    padding-bottom: 77px;
+  }
+
+  .review-form__input {
+    width: 295px;
   }
 
   .review-form__title {
     font-size: 21px;
+    padding-bottom: 27px;
+    margin: 0 auto;
+    max-width: 280px;
   }
 
   .review-form__text {
-    width: 616px;
+    width: 648px;
+    padding: 18px 22px 0;
+    margin-bottom: 55px;
+    box-sizing: border-box;
   }
 
   .review-form__container {
     display: flex;
-    justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: 22px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .review-form {
-    padding-bottom: 64px;
+    padding-bottom: 77px;
+  }
+
+  .review-form__text {
+    padding: 18px 16px;
+    width: 768px;
+    margin-bottom: 52px;
   }
 
   .review-form__container {
     padding-left: 120px;
     padding-right: 120px;
+    margin-bottom: 27px;
+  }
+
+  .review-form__title {
+    padding-bottom: 26px;
+
+    &--contacts {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .review-form__input {
-    width: 398px;
-  }
-
-  .review-form__text {
-    width: 736px;
+    width: 430px;
   }
 }

@@ -2,7 +2,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-bottom: 25px;
+  padding-bottom: 17px;
   position: relative;
   min-height: 46px;
   display: flex;
@@ -19,16 +19,11 @@
 
 .input-item__text {
   cursor: pointer;
-  padding-left: 64px;
+  padding-left: 62px;
   display: flex;
   align-items: center;
   height: 100%;
-}
-
-@media (min-width: @tablet-width) {
-  .input-item {
-    padding: 0;
-  }
+  z-index: 1;
 }
 
 .input-item__control:checked + .control-mark--radio {
@@ -37,4 +32,20 @@
 
 .input-item__control:checked + .control-mark--checkbox {
   background-image: url("/img/check-mark.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .input-item {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input-item:nth-child(3) {
+    margin-right: 10px;
+  }
+
+  .input-item:nth-child(4) {
+    margin-right: 17px;
+  }
 }

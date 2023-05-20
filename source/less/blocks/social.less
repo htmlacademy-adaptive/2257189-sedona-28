@@ -11,9 +11,35 @@
   width: 48px;
   list-style-type: none;
   background-color: @background-color;
-  margin-right: 6px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: @background-color;
+  color: white;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:active {
+    background-color: @down-color;
+    color: @down-color-icon;
+  }
+}
+
+.social__item:not(:last-child) {
+  margin-right: 5px;
 }
 
 .social__icon {
   align-self: center;
+  fill: currentColor;
+
+  & path {
+    fill: currentColor;
+  }
 }

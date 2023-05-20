@@ -10,7 +10,7 @@
   list-style-type: none;
   margin: 0;
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
 }
 
 .introduce__item:last-child {
@@ -24,8 +24,7 @@
   background-color: #d6d6d6;
   height: 338px;
   float: right;
-  margin-top: -325px;
-  margin-right: 5px;
+  margin: -325px -30px 26px 0;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -35,17 +34,24 @@
     height: 1px;
     background-color: #d6d6d6;
     width: 320px;
-    margin-top: 24px;
     margin-left: -20px;
+    position: absolute;
+    margin-top: 34px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .introduce {
+    margin-right: 55px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .introduce {
-    margin-right: 46px;
+    margin-right: 100px;
   }
 
   .introduce::after {
-    margin-right: -33px;
+    margin-right: -53px;
   }
 }

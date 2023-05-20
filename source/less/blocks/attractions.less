@@ -2,7 +2,7 @@
   .attractions {
     display: grid;
     grid-template-columns: 224px 224px;
-    row-gap: 32px;
+    row-gap: 15px;
     column-gap: 30px;
     justify-items: start;
   }
@@ -10,8 +10,10 @@
 
 @media (min-width: @desktop-width) {
   .attractions {
-    grid-template-columns: repeat(4, 205px);
+    grid-template-columns: repeat(4, 202px);
     gap: 32px;
     justify-items: center;
+    padding-top: 14px;
+    margin-left: 144px;
   }
 }

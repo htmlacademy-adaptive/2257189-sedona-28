@@ -2,10 +2,34 @@
   cursor: pointer;
   z-index: 2;
   position: absolute;
-  top: 17px;
-  right: 20px;
+  top: 15px;
+  right: 16px;
   border: none;
   background-color: transparent;
+
+  &:hover {
+    .main-nav__menu {
+      fill: red;
+    }
+  }
+
+  &:hover {
+    .main-nav__close-button {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus {
+    .main-nav__close-button {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .main-nav__close-button {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-nav__menu {
@@ -14,6 +38,7 @@
 
 .main-nav__close-button {
   display: block;
+  fill: white;
 }
 
 .main-nav--closed {
