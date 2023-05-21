@@ -11,11 +11,10 @@
 }
 
 .searching-form__title {
-  margin: 0;
+  margin: 3px 0 19px 0;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 17px;
 }
 
 .searching-form__description {
@@ -27,17 +26,31 @@
 
 @media (min-width: @tablet-width) {
   .searching-form__wraper {
-    padding: 60px 166px 44px 166px;
+    padding: 58px 166px 44px 166px;
+  }
+
+  .searching-form {
+    padding-bottom: 56px;
   }
 
   .searching-form__button {
     width: 360px;
     margin: 0 auto;
   }
+
+  .searching-form__title {
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .searching-form__wraper {
     width: 453px;
+    padding-top: 63px;
+  }
+
+  .searching-form {
+    padding-bottom: 66px;
   }
 }

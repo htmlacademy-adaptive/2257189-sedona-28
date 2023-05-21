@@ -1,3 +1,31 @@
+.like__foto {
+  margin-left: 6px;
+}
+
+.like__icon {
+  &:hover {
+    fill: @hover-color;
+    cursor: pointer;
+  }
+
+  &:focus {
+    fill: @hover-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    fill: @active-color;
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .like__foto {
+    margin-left: 2px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .like__icon {
     fill: @font-color;

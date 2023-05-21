@@ -1,11 +1,3 @@
-// .contacts {
-//   width: 189px;
-//   background: @background-input;
-//   border: none;
-//   padding: 16px;
-//   line-height: 26px;
-// }
-
 .contacts__wraper {
   display: flex;
 }
@@ -21,32 +13,44 @@
 }
 
 .contacts__input {
-  width: 189px;
+  width: 222px;
   background: @background-input;
   border: none;
-  padding: 16px;
+  padding: 19px 18px 13px 15px;
   line-height: 26px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: @line;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+    border: 0;
+  }
 }
 
 .contacts__input::-webkit-input-placeholder {
   font-family: @font;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .contacts__input::-moz-placeholder {
   font-family: @font;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .contacts__input:-ms-input-placeholder {
   font-family: @font;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .contacts__input::-ms-input-placeholder {
@@ -73,13 +77,13 @@
 
 @media (min-width: @tablet-width) {
   .contacts__input {
-    width: 205px;
+    width: 237px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__input {
-    width: 340px;
+    width: 372px;
   }
 }
 
@@ -90,7 +94,8 @@
     height: 1px;
     background-color: #d6d6d6;
     width: 320px;
-    margin-top: 24px;
     margin-left: -20px;
+    position: absolute;
+    margin-top: 34px;
   }
 }

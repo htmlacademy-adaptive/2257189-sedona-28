@@ -1,5 +1,5 @@
 .review-desc {
-  padding: 36px 20px 0 20px;
+  padding: 38px 20px 0 20px;
 
   &::after {
     content: "";
@@ -14,7 +14,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .review-desc__description {
@@ -26,7 +26,14 @@
 @media (min-width: @tablet-width) {
   .review-desc__title {
     font-size: 30px;
-    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .review-desc__description {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 444px;
   }
 
   .review-desc {
@@ -36,7 +43,12 @@
 
 @media (min-width: @desktop-width) {
   .review-desc {
-    padding: 64px 350px 64px 350px;
+    padding-top: 117px;
+    padding-bottom: 68px;
+  }
+
+  .review-desc__title {
+    margin-bottom: 32px;
   }
 }
 
@@ -47,7 +59,7 @@
     height: 1px;
     background-color: #d6d6d6;
     width: 320px;
-    margin-top: 24px;
+    margin-top: 28px;
     margin-left: -20px;
   }
 }

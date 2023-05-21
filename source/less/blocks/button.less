@@ -6,7 +6,26 @@
   color: @font-color;
   background-color: @background-color;
   display: block;
+  text-transform: uppercase;
   padding: 16px 49px;
   margin-left: 18px;
   margin-right: 18px;
+}
+
+.button:hover {
+  background-color: @hover-color;
+  border: none;
+}
+
+.button:focus {
+  background-color: @hover-color;
+  border: none;
+}
+
+.button:active {
+  background-color: @down-color;
+
+  .span {
+    opacity: 0.3;
+  }
 }

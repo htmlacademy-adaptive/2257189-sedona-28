@@ -2,13 +2,15 @@
   position: relative;
   background-color: @background-like;
   background-image: url("/img/mobile/hero-background-mobile.jpg");
+
   @media (min-resolution: 2dppx) {
     background-image: url("/img/mobile/hero-background-retina-mobile.jpg");
     background-size: cover;
   }
+
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, bottom;
-  padding-top: 80px;
+  padding-top: 89px;
   padding-bottom: 80px;
 
   &::after {
@@ -28,6 +30,9 @@
   .hero {
     background-image: url("/img/tablet/hero-background-tablet.jpg");
     background-position: bottom, 50%;
+    padding-top: 77px;
+    padding-bottom: 86px;
+
     @media (min-resolution: 2dppx) {
       background-image: url("/img/tablet/hero-background-retina-tablet.jpg");
       background-size: cover;
@@ -43,6 +48,7 @@
 @media (min-width: @desktop-width) {
   .hero {
     background-image: url("/img/desktop/hero-background-desktop.jpg");
+
     @media (min-resolution: 2dppx) {
       background-image: url("/img/desktop/hero-background-retina-desktop.jpg");
     }

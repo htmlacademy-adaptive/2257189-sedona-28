@@ -1,9 +1,14 @@
 .review-part {
-  width: 280px;
+  width: 100%;
   border: none;
   padding: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  width: 312px;
   margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+
+@media (min-width: @tablet-width) {
+  .review-part {
+    margin: 0;
+  }
 }

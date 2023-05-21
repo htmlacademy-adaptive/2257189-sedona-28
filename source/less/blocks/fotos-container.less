@@ -3,30 +3,40 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 36px;
 }
 
 .fotos-container__title {
   margin: 0;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: @tablet-width) {
   .fotos-container {
-    padding: 46px 125px 67px 125px;
+    padding: 30px 125px 81px 125px;
   }
 
   .fotos-container__description {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 440px;
+  }
+
+  .fotos-container__title {
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .fotos-container {
-    padding: 46px 330px 67px 330px;
+    padding: 63px 330px 89px 330px;
+  }
+
+  .fotos-container__description {
+    font-size: 14px;
   }
 }
 
