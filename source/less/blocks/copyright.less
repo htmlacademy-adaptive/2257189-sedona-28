@@ -1,7 +1,7 @@
 .copyright__text {
   font-size: 14px;
   text-transform: uppercase;
-  margin-right: 16px;
+  margin-right: 13px;
 
   &:hover {
     color: @background-color;
@@ -23,5 +23,11 @@
 
   &:active {
     fill: #b3b3b3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-right: 15px;
   }
 }

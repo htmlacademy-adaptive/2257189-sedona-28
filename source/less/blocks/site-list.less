@@ -12,6 +12,14 @@
   mix-blend-mode: normal;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   position: relative;
+
+  &:hover {
+    color: @background-color;
+  }
+
+  &:focus {
+    color: @background-color;
+  }
 }
 
 .site-list__link {
@@ -24,18 +32,6 @@
   display: block;
   padding-top: 19px;
   padding-bottom: 12px;
-
-  &:hover {
-    color: @background-color;
-  }
-
-  &:focus {
-    color: @background-color;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (max-width: @mobile-width-only) {

@@ -1,34 +1,23 @@
 .map {
   position: relative;
   padding-bottom: 10px;
+  background-image: url("/img/mobile/map-mobile.jpg");
+  background-size: 100% 350px;
+  background-repeat: no-repeat;
 }
 
-.map__marker {
-  position: absolute;
-  top: 45%;
-  right: 45%;
-  background: url("/img/mobile/map-point.svg");
-  width: 27px;
-  height: 27px;
+.map iframe {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
-  .map__images {
-    width: 765px;
-  }
-
-  .map__marker {
-    right: 48%;
-    top: 46%;
+  .map {
+    background-image: url("/img/tablet/map-tablet.jpg");
   }
 }
 
 @media (min-width: @desktop-width) {
-  .map__images {
-    width: 1200px;
-  }
-
-  .map__marker {
-    right: 49%;
+  .map {
+    background-image: url("/img/desktop/map-desktop.jpg");
   }
 }
