@@ -29,15 +29,16 @@ export const styles = () => {
 }
 
 // HTML
+
 const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'))
 }
 
-// // Scripts
+// Scripts
 
- const scripts = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'));
@@ -45,14 +46,14 @@ const html = () => {
 
 // Images
 
- const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
 
 }
 
- const copyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'))
 }

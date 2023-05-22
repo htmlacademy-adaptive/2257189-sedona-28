@@ -9,7 +9,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .foto-container__like {
@@ -32,7 +32,7 @@
   }
 
   .foto-container__author {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 }
 
@@ -42,6 +42,12 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 15px;
+
+    &--block {
+      padding-left: 25px;
+    }
   }
 
   .foto-container__description {
@@ -50,5 +56,9 @@
 
   .foto-container__like {
     color: @font-color;
+  }
+
+  .foto-container__author {
+    margin-bottom: 18px;
   }
 }

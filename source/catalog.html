@@ -6,6 +6,10 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="/css/style.min.css" />
     <link rel="icon" sizes="32x32" href="/favicon.ico" />
+    <link rel="icon" href="/favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-180x180.png" />
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" />
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" />
   </head>
 
   <body class="page__body">
@@ -91,53 +95,55 @@
           </div>
           <ul class="fotos__list">
             <li class="fotos__item road">
-              <picture>
-                <source
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                  srcset="
-                    /img/desktop/road-desktop.webp        1x,
-                    /img/desktop/road-retina-desktop.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                  srcset="
-                    /img/tablet/road-tablet.webp        1x,
-                    /img/tablet/road-retina-tablet.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    /img/mobile/road-mobile.webp        1x,
-                    /img/mobile/road-retina-mobile.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    /img/desktop/road-desktop.jpg        1x,
-                    /img/desktop/road-retina-desktop.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    /img/tablet/road-tablet.jpg        1x,
-                    /img/tablet/road-retina-tablet.jpg 2x
-                  "
-                />
-                <img
-                  class="road__foto"
-                  src="/img/mobile/road-mobile.jpg"
-                  width="280"
-                  height="280"
-                  srcset="/img/mobile/plants-retina-mobile.jpg 2x"
-                  alt="Фото дороги"
-                />
-              </picture>
+              <a class="fotos__link" href="#">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    srcset="
+                      /img/desktop/road-desktop.webp        1x,
+                      /img/desktop/road-retina-desktop.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    srcset="
+                      /img/tablet/road-tablet.webp        1x,
+                      /img/tablet/road-retina-tablet.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /img/mobile/road-mobile.webp        1x,
+                      /img/mobile/road-retina-mobile.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      /img/desktop/road-desktop.jpg        1x,
+                      /img/desktop/road-retina-desktop.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/tablet/road-tablet.jpg        1x,
+                      /img/tablet/road-retina-tablet.jpg 2x
+                    "
+                  />
+                  <img
+                    class="road__foto"
+                    src="/img/mobile/road-mobile.jpg"
+                    width="280"
+                    height="280"
+                    srcset="/img/mobile/plants-retina-mobile.jpg 2x"
+                    alt="Фото дороги"
+                  />
+                </picture>
+              </a>
               <div class="foto-container road__block">
                 <div class="foto-container__description">
                   <h2 class="foto-container__caption">неродные просторы</h2>
@@ -158,54 +164,56 @@
               </div>
             </li>
             <li class="fotos__item foto">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    /img/desktop/plants-desktop.webp        1x,
-                    /img/desktop/plants-retina-desktop.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    /img/tablet/plants-tablet.webp        1x,
-                    /img/tablet/plants-retina-tablet.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    /img/mobile/plants-mobile.webp        1x,
-                    /img/mobile/plants-retina-mobile.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    /img/desktop/plants-desktop.jpg        1x,
-                    /img/desktop/plants-retina-desktop.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    /img/tablet/plants-tablet.jpg        1x,
-                    /img/tablet/plants-retina-tablet.jpg 2x
-                  "
-                />
-                <img
-                  class="foto__picture"
-                  src="/img/mobile/plants-mobile.jpg"
-                  width="280"
-                  height="280"
-                  srcset="/img/mobile/plants-retina-mobile.jpg 2x"
-                  alt="Фото растений"
-                />
-              </picture>
-              <div class="foto-container foto__block">
+              <a class="fotos__link" href="#">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      /img/desktop/plants-desktop.webp        1x,
+                      /img/desktop/plants-retina-desktop.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/tablet/plants-tablet.webp        1x,
+                      /img/tablet/plants-retina-tablet.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /img/mobile/plants-mobile.webp        1x,
+                      /img/mobile/plants-retina-mobile.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      /img/desktop/plants-desktop.jpg        1x,
+                      /img/desktop/plants-retina-desktop.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/tablet/plants-tablet.jpg        1x,
+                      /img/tablet/plants-retina-tablet.jpg 2x
+                    "
+                  />
+                  <img
+                    class="foto__picture"
+                    src="/img/mobile/plants-mobile.jpg"
+                    width="280"
+                    height="280"
+                    srcset="/img/mobile/plants-retina-mobile.jpg 2x"
+                    alt="Фото растений"
+                  />
+                </picture>
+              </a>
+              <div class="foto-container foto-container--block">
                 <div class="foto-container__description">
                   <h2 class="foto-container__caption">
                     Местная растительность
@@ -227,54 +235,56 @@
               </div>
             </li>
             <li class="fotos__item fotos__item--grey foto">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    /img/desktop/mountaine-road-desktop.webp        1x,
-                    /img/desktop/mountaine-road-retina-desktop.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    /img/tablet/mountaine-road-tablet.webp        1x,
-                    /img/tablet/mountaine-road-retina-tablet.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    /img/mobile/mountaine-road-mobile.webp        1x,
-                    /img/mobile/mountaine-road-retina-mobile.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    /img/desktop/mountaine-road-desktop.jpg        1x,
-                    /img/desktop/mountaine-road-retina-desktop.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    /img/tablet/mountaine-road-tablet.jpg        1x,
-                    /img/tablet/mountaine-road-retina-tablet.jpg 2x
-                  "
-                />
-                <img
-                  class="foto__picture"
-                  src="/img/mobile/mountaine-road-mobile.jpg"
-                  width="280"
-                  height="280"
-                  srcset="/img/mobile/mountaine-road-retina-mobile.jpg 2x"
-                  alt="Фото горной дороги"
-                />
-              </picture>
-              <div class="foto-container foto__block">
+              <a class="fotos__link" href="#">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      /img/desktop/mountaine-road-desktop.webp        1x,
+                      /img/desktop/mountaine-road-retina-desktop.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/tablet/mountaine-road-tablet.webp        1x,
+                      /img/tablet/mountaine-road-retina-tablet.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /img/mobile/mountaine-road-mobile.webp        1x,
+                      /img/mobile/mountaine-road-retina-mobile.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      /img/desktop/mountaine-road-desktop.jpg        1x,
+                      /img/desktop/mountaine-road-retina-desktop.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/tablet/mountaine-road-tablet.jpg        1x,
+                      /img/tablet/mountaine-road-retina-tablet.jpg 2x
+                    "
+                  />
+                  <img
+                    class="foto__picture"
+                    src="/img/mobile/mountaine-road-mobile.jpg"
+                    width="280"
+                    height="280"
+                    srcset="/img/mobile/mountaine-road-retina-mobile.jpg 2x"
+                    alt="Фото горной дороги"
+                  />
+                </picture>
+              </a>
+              <div class="foto-container foto-container--block">
                 <div class="foto-container__description">
                   <h2 class="foto-container__caption">Дорога на север</h2>
                   <p class="foto-container__author">Автор фото: Петр</p>
@@ -294,54 +304,56 @@
               </div>
             </li>
             <li class="fotos__item foto">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    /img/desktop/devil-bridge-desktop.webp        1x,
-                    /img/desktop/devil-bridge-retina-desktop.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    /img/tablet/devil-bridge-tablet.webp        1x,
-                    /img/tablet/devil-bridge-retina-tablet.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    /img/mobile/devil-bridge-mobile.webp        1x,
-                    /img/mobile/devil-bridge-retina-mobile.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    /img/desktop/devil-bridge-desktop.jpg        1x,
-                    /img/desktop/devil-bridge-retina-desktop.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    /img/tablet/devil-bridge-tablet.jpg        1x,
-                    /img/tablet/devil-bridge-retina-tablet.jpg 2x
-                  "
-                />
-                <img
-                  class="foto__picture"
-                  src="/img/mobile/devil-bridge-mobile.jpg"
-                  width="280"
-                  height="280"
-                  srcset="/img/mobile/devil-bridge-retina-mobile.jpg 2x"
-                  alt="Фото моста дьявола"
-                />
-              </picture>
-              <div class="foto-container foto__block">
+              <a class="fotos__link" href="#">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      /img/desktop/devil-bridge-desktop.webp        1x,
+                      /img/desktop/devil-bridge-retina-desktop.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/tablet/devil-bridge-tablet.webp        1x,
+                      /img/tablet/devil-bridge-retina-tablet.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /img/mobile/devil-bridge-mobile.webp        1x,
+                      /img/mobile/devil-bridge-retina-mobile.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      /img/desktop/devil-bridge-desktop.jpg        1x,
+                      /img/desktop/devil-bridge-retina-desktop.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      /img/tablet/devil-bridge-tablet.jpg        1x,
+                      /img/tablet/devil-bridge-retina-tablet.jpg 2x
+                    "
+                  />
+                  <img
+                    class="foto__picture"
+                    src="/img/mobile/devil-bridge-mobile.jpg"
+                    width="280"
+                    height="280"
+                    srcset="/img/mobile/devil-bridge-retina-mobile.jpg 2x"
+                    alt="Фото моста дьявола"
+                  />
+                </picture>
+              </a>
+              <div class="foto-container foto-container--block">
                 <div class="foto-container__description">
                   <h2 class="foto-container__caption">Мост дьявола</h2>
                   <p class="foto-container__author">Автор фото: Антон</p>

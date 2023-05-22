@@ -17,6 +17,30 @@
   margin: 0;
 }
 
+.input-item__control:hover + .control-mark {
+  background-color: @line;
+}
+
+.input-item__control:focus + .control-mark {
+  background-color: @line;
+}
+
+.input-item__control:active + .control-mark {
+  background-color: #d5d5d5;
+}
+
+.input-item__control:active + .control-mark--radio {
+  background-image: url("/img/radio-mark-active.svg");
+}
+
+.input-item__control:active + .control-mark--checkbox {
+  background-image: url("/img/check-mark-active.svg");
+}
+
+.input-item__control:disabled + .control-mark {
+  background-color: @down-color;
+}
+
 .input-item__text {
   cursor: pointer;
   padding-left: 62px;

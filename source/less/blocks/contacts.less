@@ -16,11 +16,15 @@
   width: 222px;
   background: @background-input;
   border: none;
-  padding: 19px 18px 13px 15px;
+  padding: 17px 18px 13px 18px;
   line-height: 26px;
   box-sizing: border-box;
 
   &:hover {
+    background-color: @line;
+  }
+
+  &:focus {
     background-color: @line;
   }
 
@@ -68,7 +72,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .contacts-item:last-child {
@@ -84,6 +88,7 @@
 @media (min-width: @desktop-width) {
   .contacts__input {
     width: 372px;
+    padding: 20px 16px 13px 16px;
   }
 }
 
