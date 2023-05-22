@@ -17,15 +17,15 @@
   margin: 0;
 }
 
-.input-item__control:hover + .control-mark {
+.input-item__control:hover:not([disabled]) + .control-mark {
   background-color: @line;
 }
 
-.input-item__control:focus + .control-mark {
+.input-item__control:focus:not([disabled]) + .control-mark {
   background-color: @line;
 }
 
-.input-item__control:active + .control-mark {
+.input-item__control:active:not([disabled]) + .control-mark {
   background-color: #d5d5d5;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .input-item__control:disabled + .control-mark {
-  background-color: @down-color;
+  opacity: 0.7;
 }
 
 .input-item__text {
