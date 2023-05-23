@@ -46,9 +46,11 @@
 
 @media (min-width: @tablet-width) {
   .advice-item {
-    width: 190px;
-    padding: 156px 33px 60px 33px;
+    min-height: 331px;
+    width: 256px;
+    padding: 156px 33px 60px;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .advice-item__description--tablet {
@@ -66,18 +68,18 @@
   }
 
   .advice-item--house {
-    background-position: 50% 23%;
+    background-position: 50% 60px;
     background-size: 75px 72px;
   }
 
   .advice-item--food {
-    background-position: 50% 23%;
+    background-position: 50% 60px;
     background-size: 80px 68px;
   }
 
   .advice-item--gift {
     background-size: 66px 75px;
-    background-position: 50% 25%;
+    background-position: 50% 63px;
     padding-top: 152px;
   }
 }

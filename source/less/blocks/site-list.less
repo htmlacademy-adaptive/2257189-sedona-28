@@ -10,7 +10,6 @@
 .site-list__item {
   background: @background-color;
   mix-blend-mode: normal;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   position: relative;
 
   &:hover {
@@ -26,11 +25,11 @@
   text-decoration: none;
   font-weight: 700;
   line-height: 26px;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   color: @font-color;
   display: block;
-  padding-top: 19px;
+  padding-top: 16px;
   padding-bottom: 12px;
 }
 
@@ -61,6 +60,19 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2) 100%
     );
+  }
+
+  .site-list__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
