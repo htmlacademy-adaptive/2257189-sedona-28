@@ -2,6 +2,8 @@
   position: fixed;
   background: @font-color;
   top: 116px;
+  transform: translateX(-50%);
+  left: 50%;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   width: 320px;
   margin: 0 auto;
@@ -24,11 +26,6 @@
 
 .modal-container__fail {
   padding: 45px 42px 35px 42px;
-  display: none;
-}
-
-.modal-container__success {
-  display: none;
 }
 
 .modal-container__success-wraper {
@@ -56,8 +53,6 @@
 
 @media (min-width: @tablet-width) {
   .modal-container__wraper {
-    top: 282px;
-    left: calc(50% - 200px);
     width: 400px;
   }
 
@@ -85,7 +80,7 @@
   .modal-container__success {
     position: fixed;
     width: 640px;
-    top: 150px;
+    top: 347px;
     left: calc(50% - 320px);
     background: #ffffff;
   }

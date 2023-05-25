@@ -1,13 +1,15 @@
 .map {
   position: relative;
-  padding-bottom: 10px;
   background-image: url("/img/mobile/map-mobile.jpg");
   background-size: 100% 350px;
   background-repeat: no-repeat;
+  background-color: @background-color;
 }
 
 .map iframe {
   width: 100%;
+  border: none;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
